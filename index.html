@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Johan Blanco</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b1120;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: auto; }
+        h1, h2 { color: #38bdf8; }
+        
+        /* Sección Sobre mí */
+        .header { text-align: center; padding: 40px 0; }
+        
+        /* Grid de Proyectos */
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Estilo de Tarjetas */
+        .tarjeta {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+        .tarjeta:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        
+        .tarjeta h3 { margin-top: 0; color: #fff; }
+        
+        /* Botón de GitHub */
+        .btn-github {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: #38bdf8;
+            color: #0b1120;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        /* Secciones */
+        .seccion { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>Johan Sneyder Blanco</h1>
+        <p>Estudiante de Ingeniería de Sistemas</p>
+    </header>
+
+    <section class="seccion">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de Ingeniería de Sistemas con interés en el desarrollo de software y aplicaciones web. Tengo experiencia en Java, estructuras de datos y desarrollo de sistemas funcionales.</p>
+    </section>
+  <section class="seccion">
+    <h2>Tecnologías</h2>
+    <div class="tech-container">
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">CSS3</span>
+        <span class="tech-badge">Git</span>
+        <span class="tech-badge">GitHub</span>
+        <span class="tech-badge">SQL</span>
+        <span class="tech-badge">Spring Boot</span>
+    </div>
+</section>
+
+
+    <section class="seccion">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="tarjeta">
+                <h3>Cajero automático en Java</h3>
+                <p>Sistema de simulación de transacciones bancarias con validación de saldos.</p>
+                <a href="https://github.com/Johanks19/cajeroAutomatico/tree/main" class="btn-github">Ver en GitHub</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Sistema de alquiler de carros</h3>
+                <p>Gestión de inventario de vehículos y registro de fechas de alquiler.</p>
+                <a href="https://github.com/Johanks19/alquilerCarros" class="btn-github">Ver en GitHub</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Tienda de herramientas</h3>
+                <p>Aplicación de gestión de ventas y control de stock de inventario.</p>
+                <a href="https://github.com/Johanks19/ferreteria/tree/main" class="btn-github">Ver en GitHub</a>
+            </div>
+            <div class="tarjeta">
+                <h3>sistema de alquiler de casas (airbnb) </h3>
+                <p>Proyecto enfocado en el alquiler de viviendas por cierto tiempo.</p>
+                <a href="https://github.com/Johanks19/airbnb" class="btn-github">Ver en GitHub</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
